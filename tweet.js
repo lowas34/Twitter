@@ -42,7 +42,7 @@ JQTWEET = {
 		var then = new Date(dateString);
 		
 		if ($.browser.msie) {
-			// IE can't parse these crazy Ruby dates
+		
 			then = Date.parse(dateString.replace(/( \+)/, ' UTC$1'));
 		}
 
@@ -55,11 +55,11 @@ JQTWEET = {
 		week = day * 7;
 
 		if (isNaN(diff) || diff < 0) {
-			return ""; // return blank string if unknown
+			return ""; 
 		}
 
 		if (diff < second * 2) {
-			// within 2 seconds
+			
 			return "right now";
 		}
 
