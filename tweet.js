@@ -94,7 +94,7 @@ JQTWEET = {
 		else {
 			return "over a year ago";
 		}
-	}, // timeAgo()
+	}, 
     
 	
 
@@ -127,7 +127,7 @@ JQTWEET = {
       clean: function(tweet) {
         return this.hash(this.at(this.list(this.link(tweet))));
       }
-    } // ify
+    } 
 
 	
 };
